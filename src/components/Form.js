@@ -126,13 +126,13 @@ const Form = (props) => {
                     </label>
                 </div>
                 <div>
-                    <button type = 'submit' disabled = {disabled}>Submit</button>
+                    <button type = 'submit' id = 'submitBtn' disabled = {disabled}>Submit</button>
                 </div>
             </form>
             {
                 users.map((e, idx) => {
                     console.log(e);
-                    return <User name = {e.name} first_name = {e.first_name} key = {idx} />
+                    return <User name = {e.name} first_name = {e.first_name} last_name = {e.last_name} key = {idx} />
                 })
             }
         </div>
